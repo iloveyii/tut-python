@@ -1,4 +1,6 @@
 class Animal:
+    eats = 'food'
+
     def __init__(self, name, color):
         self.name = name  # 'Animal'
         self.color = color  # 'Grey'
@@ -10,6 +12,8 @@ class Animal:
 # create objects
 cat = Animal('Meo', 'silver')
 cat.show()
+print(Animal.eats)
 
 dog = Animal('Hund', 'brown')
 dog.show()
+print (dog.eats)
