@@ -13,6 +13,37 @@ In this repo we are practicing Python. We will cover all the important topics.
 ### Numbers
 ### Strings
 
+## Control Structures
+It controls the flow of execution of statements. These are if elif, for, while.
+### if
+```python
+# IF statement
+experience = 7
+if experience > 5:
+    print('You are a professor')
+elif experience > 3:
+    print('You are an assistant professor')
+else:
+    print('You are a lecturer')
+```
+
+### for loop
+```
+fruits = ['banana', 'orange', 'banana', 'orange', 'grapes', 'banana']
+print('For loop:')
+for fruit in fruits:
+    print(fruit)
+```
+
+### while loop
+```
+count = len(fruits)
+print('While loop')
+while count > 0:
+    print(count, fruits[count-1])
+    count -= 1
+```
+
 ## Data Structures
 Data structures are used to store data and are complex than simple variables. There are several operations that could
 be performed on data structures. Here we discuss List, Set and Dictionary data structure.
@@ -20,29 +51,37 @@ be performed on data structures. Here we discuss List, Set and Dictionary data s
 A list is an array just like in other programming languages. An array can contains numbers or strings or both.
 It uses square brackets and is 0 indexed. It can count number of matching items easily.
 ```python
-    # Array is called list
-    fib1 = [1, 1, 2, 3, 5, 8, 13]
-    print(fib1)
-    
-    # Traversing array
-    for num in fib1:
-        print(num)
+# Array is called list
+fib1 = [1, 1, 2, 3, 5, 8, 13]
+print(fib1)
+
+# Traversing array
+for num in fib1:
+    print(num)
 ```
 
-## List comprehensions
+### List comprehensions
 This is a shortcut way of doing operations on list. For example double the values in list.
 ```python
-    # List comprehension - short cut way - double numbers
-    fib2 = [num * 2 for num in fib1]
-    print(f'Doubled fib1', fib2)
+# List comprehension - short cut way - double numbers
+fib2 = [num * 2 for num in fib1]
+print(f'Doubled fib1', fib2)
 ```
 
 
 ### Set
+A set is simply a list without duplicates.
+```python
+fruits = ['banana', 'orange', 'banana', 'orange', 'grapes', 'banana']
+sets = set(fruits)
+print(f'Set with no duplicates', sets)
+```
  
 ### Dictionary 
+A dictionary is like JS json i.e. a key value structure.
 
 
+  
   
 ## Classes
   Classes are defined as usual (other languages) with keyword class. The constructor method is called __init__. 

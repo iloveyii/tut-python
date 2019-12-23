@@ -29,7 +29,7 @@ print(f'Slice 3 reverse:', slice3)
 # Concatenate
 slice4 = slice2 + slice3
 print(f'Slice 4 conc:', slice4)
-# like wise list.append, list.pop, list.remove
+# like wise list.append, list.pop, list.remove, sorted
 
 # Array of arrays = list of lists
 list2d = [slice1, slice2, slice3]
