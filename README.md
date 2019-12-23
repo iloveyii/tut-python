@@ -48,6 +48,7 @@ attributes.
 ```
    
 ## Modules
+Modules are logically separated files that provides some functionality to your program.
 A module is a file that can be imported. It can be a variable or a function.
 ```python
     from m1 import PI
@@ -55,4 +56,28 @@ A module is a file that can be imported. It can be a variable or a function.
     
     print(area(3))
     print(f'Value of PI is', PI)
+```
+
+## Packages
+Splitting related files (which may contain functions and classes) into separate directories is a package.
+Code in packages could be easily maintained and debugged.
+To declare a directory as a package just place an empty file with name `__init__.py` as shown below.
+```python
+    |- package
+    |-- __init__.py
+    |-- circle.py
+```
+A package could be used as:
+```python
+from package.circle import Circle
+
+
+circle = Circle(3)
+print(f'Area of circle is', circle.area())
+print(f'Circumference of circle is', circle.circumference())
+```
+Result:
+```python
+Area of circle is 28.26
+Circumference of circle is 18.84
 ```
