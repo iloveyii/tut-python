@@ -8,7 +8,14 @@ class Animal:
     def show(self):
         print(f'My name is {self.name} and I am {self.color}')
 
+    # Can access only class level attributes
+    @classmethod
+    def showEating(cls):
+        print(f'I eat {cls.eats}')
 
+    @staticmethod
+    def alsoEating(food):
+        print(f'I also eat {food}')
 
 
 # create objects
