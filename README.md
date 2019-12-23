@@ -107,6 +107,9 @@ A dictionary is like JS json i.e. a key value structure.
 studies = {'monday': '2hr', 'wednesday': '3hr', 'saturday': '4hr'}
 print(studies)
 
+# iterate over
+for day, duration in studies.items():
+    print(f'On {day} I need to study {duration}')
 ```
  
   
