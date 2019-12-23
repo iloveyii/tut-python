@@ -106,6 +106,24 @@ A dictionary is like JS json i.e. a key value structure.
 
   
   
+  
+## Functions
+A function is a reuseable block of code. A function in python starts with keyword `def`.
+```python
+# function with a single parameter
+def area(r):
+    return 3.14 * r ** 2
+
+
+# function with parameter's default value
+def area2(r, pi=3.14):
+    return pi * r ** 2
+
+
+print(area(3))
+print(area2(3))
+
+```
 ## Classes
   Classes are defined as usual (other languages) with keyword class. The constructor method is called __init__. 
   There is an extra parameter 'self' in all the methods definitions though. There is no need of new in object instantiation.
