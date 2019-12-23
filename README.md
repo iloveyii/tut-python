@@ -9,7 +9,40 @@ In this repo we are practicing Python. We will cover all the important topics.
 ```bash
    python3.6 example.py
 ``` 
-  
+## Variables
+### Numbers
+### Strings
+
+## Data Structures
+Data structures are used to store data and are complex than simple variables. There are several operations that could
+be performed on data structures. Here we discuss List, Set and Dictionary data structure.
+### List 
+A list is an array just like in other programming languages. An array can contains numbers or strings or both.
+It uses square brackets and is 0 indexed. It can count number of matching items easily.
+```python
+    # Array is called list
+    fib1 = [1, 1, 2, 3, 5, 8, 13]
+    print(fib1)
+    
+    # Traversing array
+    for num in fib1:
+        print(num)
+```
+
+## List comprehensions
+This is a shortcut way of doing operations on list. For example double the values in list.
+```python
+    # List comprehension - short cut way - double numbers
+    fib2 = [num * 2 for num in fib1]
+    print(f'Doubled fib1', fib2)
+```
+
+
+### Set
+ 
+### Dictionary 
+
+
   
 ## Classes
   Classes are defined as usual (other languages) with keyword class. The constructor method is called __init__. 
@@ -81,3 +114,5 @@ Result:
 Area of circle is 28.26
 Circumference of circle is 18.84
 ```
+
+
