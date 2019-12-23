@@ -102,10 +102,13 @@ print(f'Set with no duplicates', sets)
  
 ### Dictionary 
 A dictionary is like JS json i.e. a key value structure.
+```python
+# A dic is a key value pair
+studies = {'monday': '2hr', 'wednesday': '3hr', 'saturday': '4hr'}
+print(studies)
 
-
-  
-  
+```
+ 
   
 ## Functions
 A function is a reuseable block of code. A function in python starts with keyword `def`.
@@ -197,3 +200,7 @@ Circumference of circle is 18.84
 
 
 ## I/O
+```python
+name = input('Enter your name')
+print('Hi', name)
+```
